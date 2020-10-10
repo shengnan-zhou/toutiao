@@ -1,0 +1,174 @@
+@import 'normalize';
+@import 'iconfont';
+@import 'adapter';
+@import 'base';
+
+.viewport {
+  max-width: 25rem;
+  margin: 0 auto;
+}
+//顶部搜索栏
+.search {
+  position: relative;
+  width: 100%;
+  height: 3.467rem;
+  padding: 0.4rem 0 0.4rem 1.067rem;
+  background-color: #c44944;
+
+  i.sousuo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 0.9rem;
+    transform: translate(1.933rem, -50%);
+  }
+
+  input[type="text"] {
+    width: 20.6rem;
+    height: 2.667rem;
+    padding-left: 2.333rem;
+    border-radius: 0.6rem;
+    &::placeholder {
+      font-size: 0.933rem;
+      color: #222222;
+    }
+  }
+
+  .release {
+    position: absolute;
+    top: 0.6rem;
+    right: 1.067rem;
+
+    color: #fff;
+    text-align: center;
+    i {
+      font-size: 1.333rem;
+    }
+    span {
+      display: block;
+      font-size: 0.667rem;
+    }
+  }
+}
+
+//顶部导航栏
+.navs {
+  position: relative;
+  height: 2.4rem;
+  padding-left: 1.067rem;
+  border-bottom: 1px solid #e8e8e8;
+  a {
+    display: inline-block;
+
+    height: 2.333rem;
+    margin-right: 1.333rem;
+    line-height: 2.333rem;
+    color: #232323;
+    font-size: 1.067rem;
+  }
+  .line {
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+    width: 2.733rem;
+    padding: 0.533rem 0;
+    border-left: 1px solid #e8e8e8;
+    box-shadow: -0.067rem 0 0.167rem 0 #e8e8e8;
+
+    .item {
+      width: 1.067rem;
+      height: 0.067rem;
+      margin: 0 auto;
+      margin-bottom: 0.333rem;
+      background-color: black;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+//新闻区
+.news {
+  padding: 0 1rem;
+  .title {
+    padding: 0.8rem 0;
+    h3 {
+      font-weight: normal;
+      font-size: 1.333rem;
+      color: #000;
+      line-height: 1.5;
+    }
+  }
+  .content {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    &.aobama {
+      img {
+        width: 7.467rem;
+       
+      }
+    }
+  }
+  .comment {
+    padding: 0.667rem 0 1rem;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 0;
+    color: #bcbcbc;
+
+    span {
+      margin-right: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    a {
+      float: right;
+      line-height: 1;
+      &::before {
+        font-size: 0.8rem;
+        color: #c3c3c3;
+      }
+    }
+  }
+}
+
+//底部tabs
+.tabs {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  height: 2.967rem;
+  padding: 0.467rem 0 0.4rem;
+  border-top: 0.033rem solid #b2b2b2;
+  background-color: #fefefe;
+  a {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    color: #505050;
+    font-size: 1.267rem;
+
+    &.active {
+      color: #f85a5b;
+    }
+  }
+  span {
+    display: block;
+    margin-top: 0.267rem;
+    font-size: 0.667rem;
+  }
+  .num {
+    position: absolute;
+    top: 0;
+    left: 3.333rem;
+    padding: 0.267rem 0.333rem;
+    border-radius:40%;
+    color: #fff;
+    font-style: normal;
+    font-size: 0.467rem;
+    background-color: #f85a5b;
+  }
+}
